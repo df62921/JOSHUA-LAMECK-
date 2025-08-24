@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Hello, World!</title>
+</head>
+<body>
+  <h1>
+   <!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Spinner</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f4f4f4;
+      font-family: Arial, sans-serif;
+      flex-direction: column;
+    }
+    button {
+      padding: 10px 20px;
+      background: #333;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .spinner {
+      margin-top: 20px;
+      width: 50px;
+      height: 50px;
+      border: 6px solid #ddd;
+      border-top: 6px solid #333;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      display: none; /* mwanzo haionekani */
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <button onclick="showSpinner()">Bonyeza Kutafuta</button>
+  <div class="spinner" id="loader"></div>
+
+  <script>
+    function showSpinner() {
+      const loader = document.getElementById("loader");
+      loader.style.display = "block"; // onyesha spinner
+    }
+  </script>
+</body>
+</html>
+  </h1>
+</body>
+</html>
